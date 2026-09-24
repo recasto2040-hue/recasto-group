@@ -174,7 +174,7 @@
 										<article>
 											<a href="#" class="image"><img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=600&auto=format&fit=crop" alt="تسويق المشاريع والحلول" /></a>
 											<h3 class="major">تسويق المشاريع والحلول</h3>
-											<p>إدارة الحملات التسويقية وإطلاق المشاريع السكنية والتجارية عبر أساليب ترويجية متقدمة.</p>
+											<p>إدارة الحملات التسويقية وإطلاق المشاريع السكنية والتجارية عبر أساليب ترويجية متتقدمة.</p>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=600&auto=format&fit=crop" alt="إدارة وتأجير الأصول" /></a>
@@ -197,25 +197,33 @@
 						<div class="inner">
 							<h2 class="major">تواصل معنا</h2>
 							<p>نسعد باستقبال استفساراتكم والتباحث حول الفرص الاستثمارية العقارية المتاحة. يمكنكم التواصل المباشر عبر النموذج أدناه.</p>
-							<form method="post" action="mailto:info@recasto-group.com" enctype="text/plain">
+							
+							<!-- تم ربط النموذج بخدمة Web3Forms بنجاح -->
+							<form action="https://api.web3forms.com/submit" method="POST">
+								<!-- مفتاح الربط الخاص بـ Web3Forms -->
+								<input type="hidden" name="access_key" value="50b2bed4-1719-47d4-b9dc-5c508d265dca">
+								<!-- عنوان الرسالة المستلمة في البريد الإلكتروني -->
+								<input type="hidden" name="subject" value="رسالة جديدة من نموذج تواصل معنا - Recasto Group">
+
 								<div class="fields">
 									<div class="field">
 										<label for="name">الاسم الكريم</label>
-										<input type="text" name="name" id="name" />
+										<input type="text" name="name" id="name" required />
 									</div>
 									<div class="field">
 										<label for="email">البريد الإلكتروني</label>
-										<input type="email" name="email" id="email" />
+										<input type="email" name="email" id="email" required />
 									</div>
 									<div class="field">
 										<label for="message">الرسالة أو الفرصة العقارية</label>
-										<textarea name="message" id="message" rows="4"></textarea>
+										<textarea name="message" id="message" rows="4" required></textarea>
 									</div>
 								</div>
 								<ul class="actions">
 									<li><input type="submit" value="إرسال الطلب" /></li>
 								</ul>
 							</form>
+
 							<ul class="contact">
 								<li class="icon solid fa-home address-details">
 									<strong>العنوان الوطني:</strong><br />
