@@ -6,7 +6,7 @@
 -->
 <html lang="ar" dir="rtl">
 	<head>
-		<title>مجموعة ريكاستو للإستثمار والتسويق العقاري</title>
+		<title>مجموعة ريكاستو للاستثمار والتسويق العقاري</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,6 +30,26 @@
 			.contact li::before {
 				left: auto;
 				right: 0;
+			}
+			/* تنسيق اللوجو الدائري الأنيق */
+			#banner .logo {
+				width: 140px;
+				height: 140px;
+				border-radius: 50%;
+				background: #ffffff;
+				padding: 10px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin: 0 auto 1.5em auto;
+				box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+				overflow: hidden;
+			}
+			#banner .logo img {
+				max-width: 100%;
+				max-height: 100%;
+				object-fit: contain;
+				border-radius: 50%;
 			}
 		</style>
 	</head>
@@ -63,7 +83,9 @@
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
-							<div class="logo"><span class="icon solid fa-building"></span></div>
+							<div class="logo">
+								<img src="logo.png" alt="شعار مجموعة ريكاستو للاستثمار والتسويق العقاري" />
+							</div>
 							<h2>مجموعة ريكاستو للاستثمار والتسويق العقاري</h2>
 							<p>حلول رائدة ومبتكرة في الاستثمار والتسويق العقاري والتطوير الاستراتيجي</p>
 						</div>
