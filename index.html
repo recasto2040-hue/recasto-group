@@ -32,7 +32,11 @@
 				right: 0;
 			}
 			
-			/* إزالة الإطار الدائري واحتواء اللوجو بحجم مناسب وواضح */
+			/* توسيط النواحي والنصوص والشعار بالكامل */
+			#banner .inner {
+				text-align: center !important;
+				margin: 0 auto;
+			}
 			#banner .logo {
 				width: auto;
 				height: auto;
@@ -53,6 +57,23 @@
 				background: rgba(255, 255, 255, 0.95);
 				padding: 15px;
 				box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+			}
+			#banner h2 {
+				text-align: center !important;
+				margin-bottom: 0.5em;
+				line-height: 1.4;
+			}
+			#banner h2 span.sub-title {
+				display: block;
+				font-size: 0.75em;
+				margin-top: 8px;
+				font-weight: normal;
+				opacity: 0.9;
+			}
+			#banner p {
+				text-align: center !important;
+				margin-left: auto;
+				margin-right: auto;
 			}
 		</style>
 	</head>
@@ -89,7 +110,10 @@
 							<div class="logo">
 								<img src="logo.png" alt="شعار مجموعة ريكاستو للاستثمار والتسويق العقاري" />
 							</div>
-							<h2>مجموعة ريكاستو للاستثمار والتسويق العقاري</h2>
+							<h2>
+								مجموعة ريكاستو
+								<span class="sub-title">للاستثمار والتسويق العقاري</span>
+							</h2>
 							<p>حلول رائدة ومبتكرة في الاستثمار والتسويق العقاري والتطوير الاستراتيجي</p>
 						</div>
 					</section>
